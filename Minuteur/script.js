@@ -51,7 +51,7 @@ function count(){
        }
 	}
 	else{
-		counter.innerHTML = "Done!";
+		counter.innerHTML = "C'est finit !";
 		btn.style.opacity = '0';
 	}
 }
