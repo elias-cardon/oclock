@@ -4,37 +4,30 @@ var timer;
 var stopwatchEl = document.querySelector('.stopwatch');
 var lapsContainer = document.querySelector('.laps');
 
-function start()
-{
-    if (!timer)
-    {
+function start() {
+    if (!timer) {
         timer = setInterval(run, 10);
     }
 }
 
-function run()
-{
+function run() {
     stopwatchEl.textContent = getTimer();
     ms++;
-    if (ms == 100)
-    {
+    if (ms == 100) {
         ms = 0;
         s++;
     }
-    if (s == 60)
-    {
+    if (s == 60) {
         s = 0;
         m++;
     }
 }
 
-function pause()
-{
+function pause() {
     stopTimer();
 }
 
-function stop()
-{
+function stop() {
     stopTimer();
     ms = 0;
     s = 0;
@@ -42,34 +35,28 @@ function stop()
     stopwatchEl.textContent = getTimer();
 }
 
-function stopTimer()
-{
+function stopTimer() {
     clearInterval(timer);
     timer = false;
 }
 
-function getTimer()
-{
-    return (m < 10 ? "0" +m : m) + ":" + (s < 10 ? "0" + s : s) + ":" + (ms < 10 ? "0" + ms : ms);
+function getTimer() {
+    return (m < 10 ? "0" + m : m) + ":" + (s < 10 ? "0" + s : s) + ":" + (ms < 10 ? "0" + ms : ms);
 }
 
-function restart()
-{
+function restart() {
     stop();
     start();
 }
 
-function lap()
-{
-    if (timer)
-    {
+function lap() {
+    if (timer) {
         var li = document.createElement('li');
         li.innerText = getTimer();
         lapsContainer.appendChild(li);
     }
 }
 
-function resetLaps()
-{
+function resetLaps() {
     lapsContainer.innerHTML = '';
 }

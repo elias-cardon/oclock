@@ -1,7 +1,6 @@
-body
-{
-    background: #c2e59c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+body {
+    background: #c2e59c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: flex;
@@ -11,26 +10,26 @@ body
     height: 100vh;
 }
 
-.stopwatch
-{
+.stopwatch {
     font-size: 15em;
     font-family: 'Trebuchet MS', sans-serif;
 }
 
-ul
-{
+ul {
     margin: 0;
     padding: 0;
 }
 
-ul li
-{
+ul li {
     list-style: none;
     padding: 10px 0;
 }
 
 
-.btn-grad {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%)
+}
+
 .btn-grad {
     margin: 10px;
     padding: 15px 45px;
