@@ -10,11 +10,11 @@
 </head>
 <body>
 <div class="controls">
-    <button class="btn-grad" onclick="start()">Start</button>
+    <button class="btn-grad" onclick="start()">Marche</button>
     <button class="btn-grad" onclick="pause()">Pause</button>
-    <button class="btn-grad" onclick="stop()">Stop</button>
-    <button class="btn-grad" onclick="restart()">Restart</button>
-    <button class="btn-grad" onclick="lap()">Tour</button>
+    <button class="btn-grad" onclick="stop()">Arrêt</button>
+    <button class="btn-grad" onclick="restart()">Recommencer</button>
+    <button class="btn-grad" onclick="lap()">Tours</button>
     <button class="btn-grad" onclick="resetLaps()">Reset tour</button>
 </div>
 <div class="stopwatch">
