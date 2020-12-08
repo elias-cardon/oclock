@@ -10,12 +10,12 @@
 </head>
 <body>
 <div class="controls">
-    <button onclick="start()">Start</button>
-    <button onclick="pause()">Pause</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="restart()">Restart</button>
-    <button onclick="lap()">Tour</button>
-    <button onclick="resetLaps()">Reset tour</button>
+    <button class="btn-grad" onclick="start()">Start</button>
+    <button class="btn-grad" onclick="pause()">Pause</button>
+    <button class="btn-grad" onclick="stop()">Stop</button>
+    <button class="btn-grad" onclick="restart()">Restart</button>
+    <button class="btn-grad" onclick="lap()">Tour</button>
+    <button class="btn-grad" onclick="resetLaps()">Reset tour</button>
 </div>
 <div class="stopwatch">
     00:00:00
