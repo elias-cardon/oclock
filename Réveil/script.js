@@ -15,7 +15,7 @@ $(function(){
             this.minutes  = date.getMinutes();
             this.seconds  = date.getSeconds();
              
-                // Format hours, minutes and seconds
+                // Format heure, min, sec
             if (hours < 10) {
                 hours = "0" + hours;
             }
@@ -37,7 +37,7 @@ $(function(){
         
         setUserTime : function(){
     
-            // create Hours
+            // créat heures
             for(var i=0; i<=24; i++){
                 
                 if (i < 10) {i = "0" + i; }
@@ -46,7 +46,7 @@ $(function(){
                 
             }
             
-            // create minutes
+            // créat minutes
             for(var i=0; i<=60; i++){
                 
                 if (i < 10) {i = "0" + i; }
@@ -55,7 +55,7 @@ $(function(){
                 
             }
             
-           // create seconds
+           // créat secondes
             for(var sec=0; sec<=60; sec++){
                 
                 if (sec < 10) {sec = "0" + sec; }
@@ -73,7 +73,7 @@ $(function(){
             
             var userSeconds = $("select.seconds").val(); 
         
-            // set chosen value on option html
+            // définir la valeur choisie html
             (userHours != null) ? $("select.hours").find("option:disabled").html(userHours): "";
             
             (userMinutes != null) ? $("select.minutes").find("option:disabled").html(userMinutes): "";
@@ -82,7 +82,7 @@ $(function(){
             
             if( this.hours == userHours &&  this.minutes == userMinutes && this.seconds == userSeconds){
           
-        // adding mp3 backgrouns sound to alarm	 
+        // mp3 alarm 
           $(".container").find('audio').attr("src","http://docs.google.com/uc?export=open&id=1GB1fu62kjdaD9oWZFROHgk3B4XXRhT3_");
           
                 $("body").addClass("body");
@@ -92,7 +92,7 @@ $(function(){
                 
             }else{
                 
-            //	console.log("time is not in yet");
+            //	console.log("le temps n'est pas encore venu");
                 
             }
             
@@ -125,7 +125,7 @@ $(function(){
       timer.reloadPage();
         timer.setUserTime();
         
-        // active real time output
+        // 
         setInterval( timer.getNewTime, 1000 );
         
         setInterval( timer.getUserTime, 1000 );
