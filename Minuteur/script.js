@@ -21,9 +21,9 @@ function display(first, second) {
 
 function check(stat) {
     toCount = stat.value;
-    if (stat.id == "start") {
+    if (stat.id === "start") {
         display("start", "stop");
-    } else if (stat.id == "stop") {
+    } else if (stat.id === "stop") {
         display("stop", "continue");
     } else {
         display('continue', "stop");
@@ -32,7 +32,7 @@ function check(stat) {
 
 function count() {
     if (seconds > 0) {
-        if (toCount == true) {
+        if (toCount === true) {
             seconds--;
             remseconds = seconds % 60;
             minuts = Math.floor(seconds / 60);
