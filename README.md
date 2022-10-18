@@ -1,14 +1,20 @@
-Le but de ce projet est de reproduire un minuteur, un chronomètre, un réveil, et une horloge. Vous devrez être capable
-d’augmenter le temps du minuteur grâce à des flèches, ou de rentrer un temps en input. Lorsque le minuteur arrive à
-zéro, une alerte (et pas une popup) apparaît et indique que le temps est écoulé.
+# Boutique en ligne
 
-Pour le chronomètre, vous devrez le lancer et l’arrêter grâce à un même bouton (marche / arrêt). De plus, vous devrez
-implémenter un bouton “tour”, qui ajoutera le temps affiché, au moment où l’utilisateur appuie, dans une liste “temps”.
-Un bouton reset sera présent pour remettre le chrono à 0.
+C'est une boutique en ligne fictive.
 
-En ce qui concerne l’horloge, elle devra être à l’heure française (UTC + 1), fonctionnelle, et donner l’heure, les
-minutes, et les secondes. Enfin pour le réveil, l’utilisateur pourra entrer une heure et un texte en input. Lorsque
-l’horloge atteindra l’heure entrée, une alerte (et pas une popup) apparaît indiquant le message que l’utilisateur aura
-rentré. De plus, l’utilisateur aura la possibilité d’entrer plusieurs alarmes qui seront affichées dans une liste, avec
-“passée” si l’heure de l’alarme est passée, et “dans x temps” avec x représentant le temps restant avant que l’heure ne
-soit atteinte.
+## Auteur
+
+- [Elias Cardon](https://www.github.com/elias-cardon)
+
+
+## 🚀 A propos de moi
+Je suis un dev web junior et je souhaite créer quelques projets pour me faire la main sur ce que j'ai déjà appris en formation et sur d'autres technos.
+## FAQ
+
+#### Quels ont été les technos utilisées dans ce projets ?
+
+J'ai utilisé des technos plutôt basiques. C'est-à-dire HTML, CSS, JS.
+
+#### Quel a été le contexte de ce projet ?
+
+C'est un des projets de ma formation. Je devais créer un minuteur, une horloge et un réveil en Javascript.
